@@ -1,0 +1,161 @@
+{
+ "NotebookModel": "GL702VM",
+ "Author": "Johnny008",
+ "EcPollInterval": 500,
+ "ReadWriteWords": false,
+ "CriticalTemperature": 80,
+ "FanConfigurations": [
+	{
+	 "ReadRegister": 151,
+	 "WriteRegister": 151,
+	 "MinSpeedValue": 0,
+	 "MaxSpeedValue": 8,
+	 "IndependentReadMinMaxValues": false,
+	 "MinSpeedValueRead": 0,
+	 "MaxSpeedValueRead": 0,
+	 "ResetRequired": true,
+	 "FanSpeedResetValue": 8,
+	 "FanDisplayName": "CPU",
+	 "TemperatureThresholds": [
+	  {
+	   "UpThreshold": 45,
+	   "DownThreshold": 0,
+	   "FanSpeed": 0.0
+	  },
+	  {
+	   "UpThreshold": 55,
+	   "DownThreshold": 50,
+	   "FanSpeed": 7.5
+	  },
+	  {
+	   "UpThreshold": 60,
+	   "DownThreshold": 55,
+	   "FanSpeed": 17.5
+	  },
+	  {
+	   "UpThreshold": 65,
+	   "DownThreshold": 60,
+	   "FanSpeed": 45.0
+	  },
+	  {
+	   "UpThreshold": 69,
+	   "DownThreshold": 65,
+	   "FanSpeed": 75.0
+	  },
+	  {
+	   "UpThreshold": 75,
+	   "DownThreshold": 70,
+	   "FanSpeed": 100.0
+	  },
+	  {
+	   "UpThreshold": 80,
+	   "DownThreshold": 75,
+	   "FanSpeed": 100.0
+	  }
+	 ],
+	 "FanSpeedPercentageOverrides": []
+	},
+	{
+	 "ReadRegister": 152,
+	 "WriteRegister": 152,
+	 "MinSpeedValue": 0,
+	 "MaxSpeedValue": 8,
+	 "IndependentReadMinMaxValues": false,
+	 "MinSpeedValueRead": 0,
+	 "MaxSpeedValueRead": 0,
+	 "ResetRequired": true,
+	 "FanSpeedResetValue": 8,
+	 "FanDisplayName": "GPU",
+	 "TemperatureThresholds": [
+	  {
+	   "UpThreshold": 55,
+	   "DownThreshold": 0,
+	   "FanSpeed": 0.0
+	  },
+	  {
+	   "UpThreshold": 60,
+	   "DownThreshold": 55,
+	   "FanSpeed": 50.0
+	  },
+	  {
+	   "UpThreshold": 65,
+	   "DownThreshold": 60,
+	   "FanSpeed": 75.0
+	  },
+	  {
+	   "UpThreshold": 69,
+	   "DownThreshold": 65,
+	   "FanSpeed": 87.5
+	  },
+	  {
+	   "UpThreshold": 75,
+	   "DownThreshold": 70,
+	   "FanSpeed": 100.0
+	  },
+	  {
+	   "UpThreshold": 80,
+	   "DownThreshold": 75,
+	   "FanSpeed": 100.0
+	  }
+	 ],
+	 "FanSpeedPercentageOverrides": []
+	},
+	{
+	 "ReadRegister": 153,
+	 "WriteRegister": 153,
+	 "MinSpeedValue": 0,
+	 "MaxSpeedValue": 8,
+	 "IndependentReadMinMaxValues": false,
+	 "MinSpeedValueRead": 0,
+	 "MaxSpeedValueRead": 0,
+	 "ResetRequired": true,
+	 "FanSpeedResetValue": 8,
+	 "FanDisplayName": "3rd Fan",
+	 "TemperatureThresholds": [
+	  {
+	   "UpThreshold": 60,
+	   "DownThreshold": 0,
+	   "FanSpeed": 0.0
+	  },
+	  {
+	   "UpThreshold": 80,
+	   "DownThreshold": 50,
+	   "FanSpeed": 100.0
+	  }
+	 ],
+	 "FanSpeedPercentageOverrides": []
+	}
+ ],
+ "RegisterWriteConfigurations": [
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnWriteFanSpeed",
+	 "Register": 160,
+	 "Value": 10,
+	 "ResetRequired": true,
+	 "ResetValue": 10,
+	 "ResetWriteMode": "Set",
+	 "Description": "CPU FAN"
+	},
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnWriteFanSpeed",
+	 "Register": 166,
+	 "Value": 10,
+	 "ResetRequired": true,
+	 "ResetValue": 10,
+	 "ResetWriteMode": "Set",
+	 "Description": "GPU FAN"
+	},
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnWriteFanSpeed",
+	 "Register": 172,
+	 "Value": 10,
+	 "ResetRequired": true,
+	 "ResetValue": 10,
+	 "ResetWriteMode": "Set",
+	 "Description": "3rd FAN"
+	}
+ ]
+}
